@@ -1,0 +1,19 @@
+{
+    "videos": [
+        {
+            "title": "Sample Video 1",
+            "description": "This is a description for sample video 1.",
+            "thumbnail": "assets/videos/sample1.jpg"
+        },
+        {
+            "title": "Sample Video 2",
+            "description": "This is a description for sample video 2.",
+            "thumbnail": "assets/videos/sample2.jpg"
+        },
+        {
+            "title": "Sample Video 3",
+            "description": "This is a description for sample video 3.",
+            "thumbnail": "assets/videos/sample3.jpg"
+        }
+    ]
+}
