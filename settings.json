@@ -4,7 +4,7 @@
         "dpi_aware": true
     },
     "debugging": {
-        "show_console": true,
+        "show_console": false,
         "subprocess_show_console": false,
         "log_level": "DEBUG4",
         "log_file": "debug.log"
@@ -17,8 +17,8 @@
         "maximum_size": [0, 0],
         "disable_maximize_button": false,
         "center_on_screen": true,
-        "start_maximized": false,
-        "start_fullscreen": false,
+        "start_maximized": true,
+        "start_fullscreen": true,
         "always_on_top": false,
         "minimize_to_tray": false,
         "minimize_to_tray_message": "Minimized to tray"
@@ -45,18 +45,18 @@
         "cache_path": "webcache",
         "external_drag": true,
         "external_navigation": true,
-        "reload_page_F5": true,
-        "devtools_F12": true,
+        "reload_page_F5": false,
+        "devtools_F12": false,
         "remote_debugging_port": 0,
         "command_line_switches": {},
         "enable_downloads": true,
         "context_menu": {
-            "enable_menu": true,
+            "enable_menu": false,
             "navigation": true,
-            "print": true,
-            "view_source": true,
-            "open_in_external_browser": true,
-            "devtools": true
+            "print": false,
+            "view_source": false,
+            "open_in_external_browser": false,
+            "devtools": false
         }
     }
 }
