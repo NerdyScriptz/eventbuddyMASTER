@@ -62,5 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
+  <script src="assets/js/login/app.js"></script>
 </body>
 </html>
