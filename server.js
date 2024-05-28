@@ -7,7 +7,7 @@ app.use(express.static(join(__dirname, "www")));
 
 // Endpoint to serve the configuration file
 app.get("/auth_config.json", (req, res) => {
-  res.sendFile(join(__dirname, "www", "auth-config.json"));
+  res.sendFile(join(__dirname, "www", "auth_config.json"));
 });
 
 // Serve the index page for all other requests
