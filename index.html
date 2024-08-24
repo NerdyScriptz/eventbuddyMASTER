@@ -1,17 +1,66 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>SPA SDK Sample</title>
-    <link rel="stylesheet" type="text/css" href="/css/main.css" />
-  </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Buddy - Your Ultimate Companion for Planning Memorable Events</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container animate__animated animate__fadeIn">
+        <h1>Event Buddy</h1>
+        <p>Your Ultimate Companion for Planning Memorable Events</p>
+        <button class="btn" onclick="showFeature()">Get Started</button>
+        
+        <div id="featureSection" style="display:none;">
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>Event Scheduling</h3>
+                    <p>Plan and organize your events seamlessly with our scheduling feature.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-birthday-cake"></i>
+                    <h3>Party Planning</h3>
+                    <p>Make your parties unforgettable with our specialized tools and tips.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-users"></i>
+                    <h3>Guest Management</h3>
+                    <p>Easily manage your guest list and RSVPs with real-time updates.</p>
+                </div>
+            </div>
+            <div class="icon">
+                <i class="fas fa-glass-cheers"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-gift"></i>
+            </div>
+        </div>
+    </div>
 
-  <body>
-    <h2>SPA Authentication Sample</h2>
-    <p>Welcome to our page!</p>
-    <button id="btn-login" disabled="true" onclick="login()">Log in</button>
-    <button id="btn-logout" disabled="true" onclick="logout()">Log out</button>  
-  <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
-  <script src="assets/js/login/app.js"></script>
-  </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+    <script>
+        function showFeature() {
+            document.getElementById('featureSection').style.display = 'block';
+            $('html, body').animate({
+                scrollTop: $("#featureSection").offset().top
+            }, 1000);
+        }
+
+        $(document).ready(function(){
+            $('.feature').hover(
+                function() {
+                    $(this).find('i').addClass('animate__animated animate__tada');
+                }, 
+                function() {
+                    $(this).find('i').removeClass('animate__animated animate__tada');
+                }
+            );
+        });
+    </script>
+</body>
 </html>
